@@ -59,12 +59,12 @@ All configuration files are located in the `/config` directory.
 ### 🔹 `config.py`
 - Configure the input file names, Google API key file, spreadsheet name, and worksheet.
 
-### 🔹 `paypal_category.csv` & `n26_category.csv`
+### 🔹 `paypal_category` & `n26_category`
 - Define **keywords** and their corresponding **categories** for automatic assignment.
 - Format: `keyword, category, subcategory`
 - (Default files include example configurations.)
 
-### 🔹 `paypal_blacklist.csv` & `n26_blacklist.csv`
+### 🔹 `paypal_blacklis` & `n26_blacklist
 - Define **keywords** that should be ignored if found in the sender or transaction message.
 - ⚠️ The **N26 blacklist** excludes `PayPal` by default to prevent **double spending** issues.
 
