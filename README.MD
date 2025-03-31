@@ -6,7 +6,7 @@ CSVExpenseTracker automates the process of tracking monthly expenses using **Goo
 
 >[!NOTE]
 >Currently, only **N26** and **PayPal** parsers are implemented.
->(See: [How to correctly export PayPal logs](#how-to-export-paypal-logs-correctly))
+>(See: [How to correctly export PayPal logs](#-how-to-export-paypal-logs-correctly))
 
 ---
 ## 🚀 Installation
