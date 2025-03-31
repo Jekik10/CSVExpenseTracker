@@ -65,6 +65,9 @@ All configuration files are located in the `/config` directory.
 - Define **keywords** that should be ignored if found in the sender or transaction message.
 - ⚠️ The **N26 blacklist** excludes `PayPal` by default to prevent **double spending** issues.
 
+### 🔹 Uploading CSV Files
+- Place the CSV files to be parsed in the `/input` directory before running the script.
+
 ---
 ## ▶️ Running the Script
 Once everything is configured, run the script:
@@ -85,3 +88,4 @@ To properly export PayPal logs:
 ---
 
 ✅ Your expense tracker is now set up! 🎉 Happy budgeting!
+
