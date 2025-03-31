@@ -4,8 +4,9 @@ CSVExpenseTracker automates the process of tracking monthly expenses using **Goo
 - **Automatic categorization** of expenses based on keywords (categories & subcategories).
 - **Exclusion of certain expenses** based on keywords.
 
-Currently, only **N26** and **PayPal** parsers are implemented.
-(See: [How to correctly export PayPal logs](#how-to-export-paypal-logs-correctly))
+>[!NOTE]
+>Currently, only **N26** and **PayPal** parsers are implemented.
+>(See: [How to correctly export PayPal logs](#how-to-export-paypal-logs-correctly))
 
 ---
 ## 🚀 Installation
@@ -44,10 +45,12 @@ To enable Google Sheets integration, you need to set up API access:
 4. Paste it into the sharing field and grant **Editor** access.
 5. Click **Send**.
 
-📌 **Note**: A template spreadsheet is available here: [Google Sheets Template](https://docs.google.com/spreadsheets/d/1uwWi78mgVENbNoc8REMdLWvAdgcTZm4_h78E1VNSqWk/edit?usp=sharing)
+>[!NOTE]
+>A template spreadsheet is available here: [Google Sheets Template](https://docs.google.com/spreadsheets/d/1uwWi78mgVENbNoc8REMdLWvAdgcTZm4_h78E1VNSqWk/edit?usp=sharing)
 
-⚠️ **IMPORTANT:** *Do NOT request access to the template file. Instead, copy it to your own Google Drive:*
-- Click **File > Make a Copy**
+>[!IMPORTANT] 
+>*Do NOT request access to the template file. Instead, copy it to your own Google Drive:*
+>- Click **File > Make a Copy**
 
 ---
 ## 🔧 Software Configuration
