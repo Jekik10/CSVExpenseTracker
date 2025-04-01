@@ -1,5 +1,5 @@
 CREDENTIALS_FILE = "credentials.json"           # YOUR GOOGLE SHEETS CREDENTIALS FILE
-SHEET_NAME = "FinancialSheet2025"               # YOUR GOOGLE SHEETS NAME
+SHEET_NAME = "TestSheet"               # YOUR GOOGLE SHEETS NAME
 WORKSHEET= "January"                            # SHEETS WORKSHEET NAME WHERE YOU WANT TO WRITE THE DATA
 
 # PAYPAL

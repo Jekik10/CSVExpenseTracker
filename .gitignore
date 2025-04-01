@@ -3,3 +3,8 @@ __pycache__/
 *.pyc
 /input/*
 !/input/.gitkeep
+.gitignore
+n26_blacklist
+n26_category
+paypal_blacklist
+paypal_category
