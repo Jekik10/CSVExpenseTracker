@@ -1,4 +1,4 @@
-class PaypalEntry:
+class N26Entry:
     def __init__(self, booking_date, value_date, beneficiary, account_number, transaction_type, payment_reference, account_name, amount_eur, amount_other, currency, exchange_rate):
         self.booking_date = booking_date
         self.value_date = value_date

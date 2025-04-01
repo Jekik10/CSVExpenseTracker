@@ -1,7 +1,7 @@
 import csv
 
 from src.utils.const import DEFAULT_CURRENCY
-from .classes import PaypalEntry
+from .classes import N26Entry
 from src.main.csvAdapter.common import NewEntry
 
 def read_from_csv(filename):
@@ -10,7 +10,7 @@ def read_from_csv(filename):
         csv_reader = csv.reader(csv_file, delimiter=",")
         next(csv_reader) #remove header
         for row in csv_reader:
-            entry = PaypalEntry(row[0], row[1], row[2], row[3], row[4], row[5], row[6], row[7], row[8], row[9], row[10])
+            entry = N26Entry(row[0], row[1], row[2], row[3], row[4], row[5], row[6], row[7], row[8], row[9], row[10])
             entries.append(entry)
     return entries
 
