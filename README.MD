@@ -4,8 +4,9 @@ CSVExpenseTracker automates the process of tracking monthly expenses using **Goo
 - **Automatic categorization** of expenses based on keywords (categories & subcategories).
 - **Exclusion of certain expenses** based on keywords.
 
-Currently, only **N26** and **PayPal** parsers are implemented.
-(See: [How to correctly export PayPal logs](#how-to-export-paypal-logs-correctly))
+>[!NOTE]
+>Currently, only **N26** and **PayPal** parsers are implemented.
+>(See: [How to correctly export PayPal logs](#-how-to-export-paypal-logs-correctly))
 
 ---
 ## 🚀 Installation
@@ -44,10 +45,12 @@ To enable Google Sheets integration, you need to set up API access:
 4. Paste it into the sharing field and grant **Editor** access.
 5. Click **Send**.
 
-📌 **Note**: A template spreadsheet is available here: [Google Sheets Template](https://docs.google.com/spreadsheets/d/1uwWi78mgVENbNoc8REMdLWvAdgcTZm4_h78E1VNSqWk/edit?usp=sharing)
+>[!NOTE]
+>A template spreadsheet is available here: [Google Sheets Template](https://docs.google.com/spreadsheets/d/1uwWi78mgVENbNoc8REMdLWvAdgcTZm4_h78E1VNSqWk/edit?usp=sharing)
 
-⚠️ **IMPORTANT:** *Do NOT request access to the template file. Instead, copy it to your own Google Drive:*
-- Click **File > Make a Copy**
+>[!IMPORTANT] 
+>*Do NOT request access to the template file. Instead, copy it to your own Google Drive:*
+>- Click **File > Make a Copy**
 
 ---
 ## 🔧 Software Configuration
@@ -56,12 +59,12 @@ All configuration files are located in the `/config` directory.
 ### 🔹 `config.py`
 - Configure the input file names, Google API key file, spreadsheet name, and worksheet.
 
-### 🔹 `paypal_category.csv` & `n26_category.csv`
+### 🔹 `paypal_category` & `n26_category`
 - Define **keywords** and their corresponding **categories** for automatic assignment.
 - Format: `keyword, category, subcategory`
 - (Default files include example configurations.)
 
-### 🔹 `paypal_blacklist.csv` & `n26_blacklist.csv`
+### 🔹 `paypal_blacklis` & `n26_blacklist
 - Define **keywords** that should be ignored if found in the sender or transaction message.
 - ⚠️ The **N26 blacklist** excludes `PayPal` by default to prevent **double spending** issues.
 
