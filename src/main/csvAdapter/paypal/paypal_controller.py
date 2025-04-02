@@ -5,6 +5,7 @@ from src.main.csvAdapter.common import *
 def read_from_csv(filename):
     with open(filename) as csv_file:
         data = csv.DictReader(csv_file, delimiter=",")
+        data.fieldnames = [row.replace('ï»¿', '') for row in data.fieldnames]
         data.fieldnames = [row.replace('\ufeff', '') for row in data.fieldnames]
         data.fieldnames = [row.replace('"', '') for row in data.fieldnames]
         return list(data)
