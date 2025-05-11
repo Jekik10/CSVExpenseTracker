@@ -6,3 +6,13 @@ class NewEntry:
         self.amount_eur = amount_eur
         self.category = ""
         self.subcategory = ""
+    
+    def to_row(self):
+        return [
+            self.date,
+            self.beneficiary,
+            self.currency,
+            str(self.amount_eur),
+            self.category,
+            self.subcategory
+        ]

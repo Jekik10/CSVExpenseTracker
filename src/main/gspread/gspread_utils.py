@@ -25,3 +25,6 @@ def readCell(sheet, cell):
 
 def writeRow(sheet, row):
     sheet.append_row(row, value_input_option="USER_ENTERED")
+
+def writeRows(sheet, rows):
+    sheet.append_rows(rows, value_input_option="USER_ENTERED")
